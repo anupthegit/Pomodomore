@@ -1,0 +1,66 @@
+input{
+border-style:groove;
+border-width:1px;
+}
+.middle{
+line-height: 1;
+}
+.timer{
+font-family: "Arial";
+font-size: 30px;
+}
+.timerback{
+height: 30px;
+width: 150px;
+}
+.bodycolor{
+background-color:#AAAACC;
+}
+.timerbody{
+height: 110px;
+width: 150px;
+}
+.nodrag{
+-webkit-app-region:no-drag;
+}
+.hidden{
+display:none;
+}
+.timeunit{
+width: 25px;
+display: inline;
+}
+.smallfont{
+font-size: 12px;
+}
+.smallicon{
+width:24px;
+height:24px;
+}
+.settings{
+width: 300px;
+height: 180px;
+}
+.fullwidth{
+position: relative;
+width: 100%;
+}
+.centeredtable{
+text-align: center;
+}
+.leftable{
+text-align: left;
+}
+.rightable{
+text-align: right;
+}
+.topspaced{
+padding-top: 20px;
+}
+.volumeslider{
+position: relative;
+width: 85%;
+}
+.ui-icon-custom-settings{
+background-image: url(settings.png);
+}

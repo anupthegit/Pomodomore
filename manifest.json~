@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+
+  "name": "Pomodo'more",
+  "description": "A simple configurable Pomodoro utility that's always on top",
+  "version": "1.0",
+  "icons": {
+    "16":"icon.png",
+    "48":"icon.png",
+    "128":"icon.png"
+  },
+  "app":{
+    "background":{
+        "scripts":["eventPage.js"]
+    }
+  },
+  "permissions":[
+    "app.window.alwaysOnTop",
+    "notifications"
+  ]
+}

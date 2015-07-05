@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html style="-webkit-app-region:drag;">
+<head>
+<link rel="stylesheet" type="text/css" href="pomodomore.css">
+<link rel="stylesheet" type="text/css" href="jquery-ui/jquery-ui.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" type="text/css" href="material-icons.css">
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="jquery-ui/jquery-ui.min.js"></script>
+</head>
+<body class="w3-container">
+<script type="text/javascript" src="pomodomore.js"></script>
+<div style="height:20px;-webkit-app-region:no-drag;">
+    <a class="w3-btn" style="width:20px;height:20px;top:0px;float:right;padding:0px;"><i id="closePomodoro" title="Close" class="material-icons w3-medium" style="z-index:19999;">cancel</i></a>
+</div>
+<div id="pomodoro-timer" class="timerbody">
+    <div id="timedisplay" class="timerback">
+      <div class="middle">
+          <span id="hours" class="timer">00</span>
+          <span class="timer">:</span>
+          <span id="minutes" class="timer">00</span>
+          <span class="timer">:</span>
+          <span id="seconds" class="timer">00</span>
+      </div>
+    </div>
+    <div class="middle">
+        <a class="w3-btn-floating" style="width:30px;height:30px;-webkit-app-region:no-drag;"><i id="startPomodoro" title="Start timer" class="material-icons w3-large">play_arrow</i></a>
+        <a class="w3-btn-floating" style="width:30px;height:30px;-webkit-app-region:no-drag;"><i id="pausePomodoro" title="Pause timer" class="material-icons w3-large">pause</i></a>
+        <a class="w3-btn-floating" style="width:30px;height:30px;-webkit-app-region:no-drag;"><i id="refreshPomodoro" title="Stop timer" class="material-icons w3-large">stop</i></a>
+        <a class="w3-btn-floating" style="width:30px;height:30px;-webkit-app-region:no-drag;"><i id="settingsPomodoro" title="Settings" class="material-icons w3-large">settings</i></a>
+    </div>
+    <div id="progress" class="hidden"></div>
+</div>
+<div id="settings" class="hidden settings">
+    <table class="smallfont fullwidth centeredtable">
+        <tr class="topspaced">
+            <td>
+                <a class="w3-btn-floating" style="width:30px;height:30px;-webkit-app-region:no-drag;"><i id="show-duration-settings" title="Duration settings" class="material-icons w3-large">hourglass_empty</i></a>
+            </td>
+            <td>
+                <a class="w3-btn-floating" style="width:30px;height:30px;-webkit-app-region:no-drag;"><i id="show-appearance-settings" title="Themes" class="material-icons w3-large">palette</i></a>
+            </td>
+            <td>
+                <a class="w3-btn-floating" style="width:30px;height:30px;-webkit-app-region:no-drag;"><i id="show-audio-settings" title="Audio settings" class="material-icons w3-large">headset</i></a>
+            </td>
+        </tr>
+    </table>
+    <div id="duration-settings">
+        <table class="smallfont centeredtable fullwidth">
+            <th colspan="2">
+                Duration settings
+            </th>
+            <tr class="topspaced">
+                <td class="rightable">
+                    <label for="work">Pomodoro : </label>
+                </td>
+                <td class="leftable">
+                    <input id="work_hours" name="work" type="text" title="Hours" placeholder="HH" class="timeunit w3-ul" style="-webkit-app-region:no-drag;"/>
+                    <input id="work_minutes" name="work" type="text" title="Minutes" placeholder="MM" class="timeunit w3-ul" style="-webkit-app-region:no-drag;"/>
+                    <input id="work_seconds" name="work" type="text" title="Seconds" placeholder="SS" class="timeunit w3-ul" style="-webkit-app-region:no-drag;"/>
+                </td>
+            </tr>
+            <tr class="topspaced">
+                <td class="rightable">
+                    <label for="shortbrk">Short break : </label>
+                </td>
+                <td class="leftable">
+                    <input id="shortbrk_hours" name="shortbrk" type="text" title="Hours" placeholder="HH" class="timeunit w3-ul" style="-webkit-app-region:no-drag;"/>
+                    <input id="shortbrk_minutes" name="shortbrk" type="text" title="Minutes" placeholder="MM" class="timeunit w3-ul" style="-webkit-app-region:no-drag;"/>
+                    <input id="shortbrk_seconds" name="shortbrk" type="text" title="Seconds" placeholder="SS" class="timeunit w3-ul" style="-webkit-app-region:no-drag;"/>
+                </td>
+            </tr>
+            <tr class="topspaced">
+                <td class="rightable">
+                    <label for="longbrk">Long break : </label>
+                </td>
+                <td class="leftable">
+                    <input id="longbrk_hours" name="longbrk" type="text" title="Hours" placeholder="HH" class="timeunit w3-ul" style="-webkit-app-region:no-drag;"/>
+                    <input id="longbrk_minutes" name="longbrk" type="text" title="Minutes" placeholder="MM" class="timeunit w3-ul" style="-webkit-app-region:no-drag;"/>
+                    <input id="longbrk_seconds" name="longbrk" type="text" title="Seconds" placeholder="SS" class="timeunit w3-ul" style="-webkit-app-region:no-drag;"/>
+                </td>
+            </tr>
+            <tr class="topspaced">
+                <td class="rightable">
+                    <label for="shortbrks">Short breaks : </label>
+                </td>
+                <td class="leftable">
+                    <input id="shortbrks" name="shortbrks" type="text" title="Number of short breaks" class="timeunit w3-ul" style="-webkit-app-region:no-drag;"/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="appearance-settings" class="hidden">
+        <table class="smallfont centeredtable fullwidth">
+            <th colspan="2">
+                Appearance settings
+            </th>
+            <tr class="topspaced">
+                <td class="rightable">
+                    <label for="bg_color">Background color : </label>
+                </td>
+                <td class="leftable">
+                    <select id="bg_color" style="-webkit-app-region:no-drag;">
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="audio-settings" class="hidden">
+        <table class="smallfont centeredtable fullwidth">
+            <th colspan="2">
+                Audio settings
+            </th>
+            <tr class="topspaced">
+                <td class="rightable">
+                    <label for="notification_options">Notification sound : </label>
+                </td>
+                <td class="leftable">
+                    <select id="notification_options" style="-webkit-app-region:no-drag;">
+                    </select>
+                    <!--span class="filewrapper">
+                        <input type="text" id="notification_audio"/>
+                        <input type="file" id="notification_audio_file" class="hidden"/>
+                    </span-->
+                </td>
+            </tr>
+            <tr class="topspaced">
+                <td class="rightable">
+                    <label>Notification volume : </label>
+                </td>
+                <td class="leftable">
+                    <div id="volume-slider" class="nodrag volumeslider"></div>
+                    <input type="hidden" id="volume"/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <table class="smallfont fullwidth rightable">
+        <tr class="topspaced">
+            <td>
+                <a class="w3-btn-floating" style="width:30px;height:30px;-webkit-app-region:no-drag;"><i id="exitSettings" title="Go back" class="material-icons w3-large">home</i></a>
+            </td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
