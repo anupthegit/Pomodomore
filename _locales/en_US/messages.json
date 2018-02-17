@@ -1,0 +1,174 @@
+{
+    "appName":{
+        "message": "Pomodo'more",
+        "description": "App name"
+    },
+    "appDescription":{
+        "message": "A simple configurable Pomodoro utility that's always on top",
+        "description": "App description"
+    },
+    "settingstext":{
+        "message": "Settings",
+        "description": "Tool-tip text for settings button"
+    },
+    "stoptimertext":{
+        "message": "Stop timer",
+        "description": "Tool-tip text for stop timer button"
+    },
+    "starttimertext":{
+        "message": "Start timer",
+        "description": "Tool-tip text for start timer button"
+    },
+    "pausetimertext":{
+        "message": "Pause timer",
+        "description": "Tool-tip text for pause timer button"
+    },
+    "closebuttontext":{
+        "message": "Close",
+        "description": "Tool-tip text for close button"
+    },
+    "minimizebuttontext":{
+        "message": "Minimize",
+        "description": "Tool-tip text for minimize button"
+    },
+    "mutebuttontext":{
+        "message": "Mute notifications",
+        "description": "Tool-tip text for mute button"
+    },
+    "unmutebuttontext":{
+        "message": "Unmute notifications",
+        "description": "Tool-tip text for unmute button"
+    },
+    "tinymodebuttontext":{
+        "message": "Tiny mode (Press m to toggle)",
+        "description": "Tool-tip text for tiny mode button"
+    },
+    "durationsettingstext":{
+        "message": "Duration settings",
+        "description": "Tool-tip text for duration settings button and heading for duration settings tab"
+    },
+    "themesettingstext":{
+        "message": "Theme settings",
+        "description": "Tool-tip text for theme settings button and heading for theme settings tab"
+    },
+    "audiosettingstext":{
+        "message": "Audio settings",
+        "description": "Tool-tip text for audio settings button and heading for audio settings tab"
+    },
+    "homebuttontext":{
+        "message": "Go back",
+        "description": "Tool-tip text for home button"
+    },
+    "factoryresetbuttontext":{
+        "message": "Restore factory settings",
+        "description": "Tool-tip text for factory settings button"
+    },
+    "pomodorodurationlabel":{
+        "message": "Pomodoro : ",
+        "description": "Label for Pomodoro duration settings"
+    },
+    "shortbreakdurationlabel":{
+        "message": "Short break : ",
+        "description": "Label for short break duration settings"
+    },
+    "longbreakdurationlabel":{
+        "message": "Long break : ",
+        "description": "Label for long break duration settings"
+    },
+    "shortbreakslabel":{
+        "message": "Short breaks : ",
+        "description": "Label for short breaks settings"
+    },
+    "shortbreakstooltip":{
+        "message": "Number of short breaks : ",
+        "description": "Tool-tip text for short breaks settings"
+    },
+    "timeunithours":{
+        "message": "Hours",
+        "description": "Tool-tip text for hours time unit input boxes"
+    },
+    "timeunitminutes":{
+        "message": "Minutes",
+        "description": "Tool-tip text for minutes time unit input boxes"
+    },
+    "timeunitseconds":{
+        "message": "Seconds",
+        "description": "Tool-tip text for seconds time unit input boxes"
+    },
+    "themecolorlabel":{
+        "message": "Theme color : ",
+        "description": "Label for theme color setting"
+    },
+    "notificationsoundlabel":{
+        "message": "Notification sound : ",
+        "description": "Label for notification sound setting"
+    },
+    "notificationvolumelabel":{
+        "message": "Notification volume : ",
+        "description": "Label for notification volume setting"
+    },
+    "sounddisplaynamechaotic":{
+        "message": "Chaotic",
+        "description": "Display name for notification sound chaotic"
+    },
+    "sounddisplaynameclink":{
+        "message": "Clink",
+        "description": "Display name for notification sound clink"
+    },
+    "sounddisplaynameclocktower":{
+        "message": "Clock Tower",
+        "description": "Display name for notification sound clock tower"
+    },
+    "sounddisplaynamefun":{
+        "message": "Fun!!",
+        "description": "Display name for notification sound fun"
+    },
+    "sounddisplaynamegutsy":{
+        "message": "Gutsy",
+        "description": "Display name for notification sound gutsy"
+    },
+    "sounddisplaynamehappy":{
+        "message": "Happy :)",
+        "description": "Display name for notification sound happy"
+    },
+    "sounddisplaynamekatanabell":{
+        "message": "Katana Bell",
+        "description": "Display name for notification sound katanabell"
+    },
+    "sounddisplaynamemeadow":{
+        "message": "Meadow",
+        "description": "Display name for notification sound meadow"
+    },
+    "sounddisplaynamemystery":{
+        "message": "Mystery",
+        "description": "Display name for notification sound mystery"
+    },
+    "sounddisplaynameriver":{
+        "message": "River",
+        "description": "Display name for notification sound river"
+    },
+    "worknotificationtitle":{
+        "message": "Pomodoro session",
+        "description": "Notification title for work session"
+    },
+    "shortbreaknotificationtitle":{
+        "message": "Short break",
+        "description": "Notification title for short break"
+    },
+    "longbreaknotificationtitle":{
+        "message": "Long break",
+        "description": "Notification title for long break"
+    },
+    "worknotificationmessage":{
+        "message": "Get started!!",
+        "description": "Notification message for work session"
+    },
+    "shortbreaknotificationmessage":{
+        "message": "Good going. Time to relax, but be back soon!",
+        "description": "Notification message for short break"
+    },
+    "longbreaknotificationmessage":{
+        "message": "Great work! Viola!! Now time for a long break!",
+        "description": "Notification message for long break"
+    }
+}

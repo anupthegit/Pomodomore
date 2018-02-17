@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+
+  "name": "__MSG_appName__",
+  "description": "__MSG_appDescription__",
+  "version": "1.0.0.6",
+  "icons": {
+    "16":"icon.png",
+    "48":"icon.png",
+    "128":"icon.png"
+  },
+  "default_locale": "en_US",
+  "app":{
+    "background":{
+        "scripts":["eventPage.js"]
+    }
+  },
+  "offline_enabled": true,
+  "permissions":[
+    "app.window.alwaysOnTop",
+    "notifications",
+    "storage",
+    "system.display",
+    "identity"
+  ],
+  "oauth2": {
+    "client_id": "803597295002-c242eo4r72g1ao305btgr3k1hh5invpf.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/plus.login",
+      "https://www.googleapis.com/auth/plus.me"
+    ]
+  }
+}

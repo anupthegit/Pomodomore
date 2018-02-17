@@ -1,0 +1,74 @@
+input{
+border-style:groove;
+border-width:1px;
+}
+.invalid{
+border-color: red;
+border-width: 2px;
+}
+.middle{
+line-height: 1;
+}
+.timer{
+font-family: "Arial";
+font-size: 30px;
+}
+.timersmall{
+font-family: "Arial";
+font-size: 26px !important;
+}
+.timerback{
+height: 30px;
+width: 150px;
+}
+.bodycolor{
+background-color:#AAAACC;
+}
+.timerbody{
+height: 110px;
+width: 150px;
+}
+.nodrag{
+-webkit-app-region:no-drag !important;
+}
+.hidden{
+display:none;
+}
+.timeunit{
+width: 25px;
+display: inline;
+}
+.smallfont{
+font-size: 12px;
+}
+.smallicon{
+width:24px;
+height:24px;
+}
+.settings{
+width: 450px;
+height: 260px;
+}
+.fullwidth{
+position: relative;
+width: 100%;
+}
+.centeredtable{
+text-align: center;
+}
+.leftable{
+text-align: left;
+}
+.rightable{
+text-align: right;
+}
+.topspaced{
+padding-top: 20px;
+}
+.volumeslider{
+position: relative;
+width: 85%;
+}
+.ui-icon-custom-settings{
+background-image: url(settings.png);
+}

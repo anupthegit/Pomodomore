@@ -1,0 +1,83 @@
+.bold{
+    font-weight: bold !important;
+}
+.hidden{
+    display: none !important;
+}
+.taskname{
+    width: 50%;
+    display: inline-block;
+    padding: 10px;
+}
+.subtasks .taskname{
+    width: 49% !important;
+}
+.subtasks .subtasks .taskname{
+    width: 47% !important;
+}
+.subtasks .subtasks  .subtasks .taskname{
+    width: 45% !important;
+}
+.taskestimate{    
+    width: 110px;
+    text-align: center;
+    display: inline-block;
+    padding: 10px;
+}
+.taskduedate{    
+    width: 130px;
+    text-align: center;
+    display: inline-block;
+    padding: 10px;
+}
+.taskbuttonsbar{
+    float: right;
+    display: inline-block;
+    padding: 10px;
+}
+#tasksDiv > div:nth-child(odd){
+    color: #000;
+    background-color: #eee;
+}
+#tasksDiv > div:nth-child(even){
+    color: #000;
+    background-color: #fff;
+}
+.taskbutton{
+    height:30px;
+    top:0px;
+    float:right;
+    padding:0px;
+    background-color: transparent !important;
+}
+.togglesubtasksbutton{
+    height:30px;
+    top:0px;
+    padding:0px;
+    background-color: transparent !important;
+}
+.addsubtaskbutton{
+    width: 1px;
+    opacity: 0;
+    z-index: 9999;
+    height:30px;
+    top:0px;
+    padding:0px;
+    background-color: transparent !important;
+}
+.addsubtaskbutton:hover{
+    width: 25px;
+    opacity: 1;
+}
+.subtasks{
+    padding-left: 20px;
+}
+.subtasks > div{
+    box-shadow: none !important;
+}
+.dropfrombelow{
+    border-top: solid 2px;
+}
+.dropfromabove{
+    border-bottom: solid 2px;
+}

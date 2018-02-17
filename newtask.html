@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Create or edit task</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="material-icons.css">
+<script src="jquery.js"></script>
+<script src="jquery-ui/jquery-ui.min.js"></script>
+<script src="iterator.js"></script>
+<script src="tasklist.js"></script>
+<script src="task.js"></script>
+<script src="newtask.js"></script>
+</head>
+<body>
+<div id="task" class="w3-container">
+<div class="w3-group">
+<label class="w3-label w3-medium">Name</label>
+<input class="w3-input w3-large" type="text" autofocus id="name" required />
+</div>
+<div class="w3-group">
+<label class="w3-label w3-medium">Description</label>
+<textarea class="w3-input w3-large" id="description" ></textarea>
+</div>
+<div class="w3-group">
+<label class="w3-label w3-medium">Estimate in minutes</label>
+<input class="w3-input w3-large" type="text" id="estimate" required />
+</div>
+<div class="w3-group">
+<label class="w3-label w3-medium">Name</label>
+<input class="w3-input w3-large" type="date" id="duedate" />
+</div>
+<input id="submit" class="w3-btn w3-large blue" type="button" value="Submit" />
+<input id="cancel" class="w3-btn w3-large red" type="button" value="Cancel" />
+</div>
+</body>
+</html>
